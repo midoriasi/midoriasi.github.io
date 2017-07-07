@@ -243,7 +243,7 @@ li.bread-crumbs__item+li:before {
   padding: 15px;
 }
 
-img.article__image {
+.article__image {
   max-width: 100%;
   height: auto;
   margin: 10px auto;
@@ -424,7 +424,6 @@ img.article__image {
   border-color: #666666;
   border-style: solid;
 }
-.
 
 .aside {
   order: -1;
