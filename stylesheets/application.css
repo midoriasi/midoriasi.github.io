@@ -1,0 +1,203 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* ここにCSSを書いてデザインを入れよう */
+
+body {
+  background: rgb(180, 180, 180);
+  margin: 0px;
+  font-family: Helvetica, Arial;
+}
+
+.container {
+  margin: 1px 30px 0px;
+  border: 0px;
+  box-shadow: 0 0 2px 2px rgba(110, 110, 110, 0.2);
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background: rgb(145, 145, 145);
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.header__title {
+  position: absolute;
+  height: 3.2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: rgb(50, 50, 50);
+  line-height: normal;
+  text-shadow: 0px 1px 1px rgb(180, 180, 180);
+}
+
+/* global-nav */
+.global-nav {
+  display: table;
+  width: 100%;
+}
+
+.global-nav__items {
+  display: table-row;
+}
+
+.global-nav__item {
+  display: table-cell;
+  list-style: none;
+  width: 20%;
+  background: rgb(220, 220, 220);
+  text-align: center;
+  line-height: 30px;
+  padding: 10px 0px;
+  box-shadow: 0px 1px 1px 1px rgba(150, 150, 150, 0.8);
+}
+
+.global-nav__item a {
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0px 1px 1px white;
+}
+
+.global-nav li:nth-child(even) {
+  background: rgb(170, 170, 170);
+}
+
+/* パンくずリスト */
+
+.bread-crumbs {
+  background: #555;
+  font-size: 14px;
+}
+
+.bread-crumbs__items {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.bread-crumbs__item {}
+
+.bread-crumbs__items a {
+  text-decoration: none;
+  color: white;
+}
+
+li.bread-crumbs__item+li:before {
+  content: "　>　";
+  color: grey;
+}
+
+/* top ads */
+
+.top-ads__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background: rgb(220, 220, 220);
+}
+
+.top-ads__item {
+}
+
+.top-ads__items img {
+}
+
+/* .body */
+
+.body{
+  display: flex;
+  width: 100%;
+}
+
+.main{
+  flex: 2;
+  background: #eee;
+}
+
+.main-header__title{
+  position: relative;
+  line-height: 50px;
+  padding: 10px 40px;
+  font-size: 2rem;
+  box-shadow: 0px 1px 0px 1px rgba(0,0,0,0.2);
+}
+
+.main-header__title::before{
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 20px;
+  border-width: 12px 12px 12px 12px;
+  border-color: #b4b4b4 #222 #b4b4b4 #222;
+  border-style: solid;
+}
+
+.main-header__title::after{
+  position: absolute;
+  content: '';
+  top: 0px;
+  right: 0px;
+  border-width: 12px 12px 12px 12px;
+  border-color: #dcdcdc #dcdcdc #b4b4b4 #b4b4b4;
+  border-style: solid;
+}
+
+img.article__image{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.aside{
+  order: -1;
+  background: #222;
+}
